@@ -8,6 +8,8 @@ import { terser } from 'rollup-plugin-terser'
 import json from 'rollup-plugin-json'
 import babel from 'rollup-plugin-babel'
 
+import inline from './util/inline'
+
 const production = !process.env.ROLLUP_WATCH
 
 export default {
@@ -74,7 +76,10 @@ export default {
 
     // If we're building for production (npm run build
     // instead of npm run dev), minify
-    production && terser()
+    production && terser(),
+
+    // make into single .html file
+    inline('index.html', 'product.html', 'public')
   ],
   watch: {
     clearScreen: false
