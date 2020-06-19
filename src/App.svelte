@@ -5,7 +5,7 @@
 
   import routes from "./routes";
 
-  import store from 'store'
+  import store from "store";
 
   // import Voyager from './components/voyager.svg'
 
@@ -22,7 +22,15 @@
     store.set("voyager_admin", adminStatus);
     admin = adminStatus;
   }
+
 </script>
+
+<style lang="scss">
+  @import './theme.scss';
+  body {
+    font-family: $fontBody;
+  }
+</style>
 
 <body>
 

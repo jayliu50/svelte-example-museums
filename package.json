@@ -8,11 +8,14 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/runtime": "^7.4.5",
     "@ungap/custom-elements-builtin": "^0.5.1",
+    "autoprefixer": "^9.8.0",
     "base64-img": "^1.0.4",
     "cheerio": "^1.0.0-rc.3",
     "document-register-element": "^1.14.3",
     "htmlparser2": "^4.1.0",
+    "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.32",
     "rollup": "^1.10.1",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.3.4",
@@ -22,7 +25,8 @@
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^4.0.4",
     "sirv-cli": "^0.4.0",
-    "svelte": "^3.0.0"
+    "svelte": "^3.0.0",
+    "svelte-preprocess": "^3.9.9"
   },
   "scripts": {
     "build": "rollup -c",
@@ -34,8 +38,8 @@
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^2.4.3",
     "core-js": "3",
-    "d3-dsv": "^1.1.1",
     "store": "^2.0.12",
     "svelte-spa-router": "^2.2.0"
-  }
+  },
+  "browserslist": "> .5%, IE 11"
 }

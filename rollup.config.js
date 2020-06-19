@@ -1,17 +1,18 @@
-import svelte from 'rollup-plugin-svelte'
-import resolve from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs'
-import livereload from 'rollup-plugin-livereload'
-import { terser } from 'rollup-plugin-terser'
+import svelte from "rollup-plugin-svelte";
+import resolve from "rollup-plugin-node-resolve";
+import commonjs from "rollup-plugin-commonjs";
+import livereload from "rollup-plugin-livereload";
+import { terser } from "rollup-plugin-terser";
 // import svelteSVG from "rollup-plugin-svelte-svg"
 
 // added by angelo
-import json from 'rollup-plugin-json'
-import babel from 'rollup-plugin-babel'
+import json from "rollup-plugin-json";
+import babel from "rollup-plugin-babel";
 
-import inline from './util/inline'
+import inline from "./util/inline";
+import autoPreprocess from "svelte-preprocess";
 
-const production = !process.env.ROLLUP_WATCH
+const production = !process.env.ROLLUP_WATCH;
 
 export default {
   input: "src/main.js",
@@ -31,6 +32,16 @@ export default {
       css: (css) => {
         css.write("public/bundle.css");
       },
+      preprocess: autoPreprocess({
+        scss: {
+          includePaths: ["src"],
+        },
+        postcss: {
+          plugins: [
+            require("autoprefixer"),
+          ],
+        },
+      }),
     }),
 
     // If you have external dependencies installed from
@@ -52,10 +63,7 @@ export default {
     babel({
       extensions: [".js", ".mjs", ".html", ".svelte"],
       runtimeHelpers: true,
-      exclude: [
-        "node_modules/@babel/**",
-        "node_modules/core-js/**"
-      ],
+      exclude: ["node_modules/@babel/**", "node_modules/core-js/**"],
       presets: [
         [
           "@babel/preset-env",
@@ -84,7 +92,7 @@ export default {
     production && terser(),
 
     // make into single .html file
-    inline("index.html", "product.html", "public"),
+    production && inline("index.html", "product.html", "public"),
   ],
   watch: {
     clearScreen: false,
