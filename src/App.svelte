@@ -5,9 +5,11 @@
 
   import routes from "./routes";
 
+  import store from 'store'
+
   // import Voyager from './components/voyager.svg'
 
-  let admin = sessionStorage.getItem("voyager_admin");
+  let admin = store.get("voyager_admin");
 
   function routeLoaded(event) {
     console.info("Caught event routeLoaded", event.detail);
@@ -17,7 +19,7 @@
   }
 
   function setAdmin(adminStatus) {
-    sessionStorage.setItem("voyager_admin", adminStatus);
+    store.set("voyager_admin", adminStatus);
     admin = adminStatus;
   }
 </script>

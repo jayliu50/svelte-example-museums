@@ -3,6 +3,7 @@ import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
+// import svelteSVG from "rollup-plugin-svelte-svg"
 
 // added by angelo
 import json from 'rollup-plugin-json'
@@ -13,22 +14,23 @@ import inline from './util/inline'
 const production = !process.env.ROLLUP_WATCH
 
 export default {
-  input: 'src/main.js',
+  input: "src/main.js",
   output: {
     sourcemap: true,
-    format: 'iife',
-    name: 'app',
-    file: 'public/bundle.js'
+    format: "iife",
+    name: "app",
+    file: "public/bundle.js",
   },
   plugins: [
+    // svelteSVG(),
     svelte({
       // enable run-time checks when not in production
       dev: !production,
       // we'll extract any component CSS out into
       // a separate file — better for performance
-      css: css => {
-        css.write('public/bundle.css')
-      }
+      css: (css) => {
+        css.write("public/bundle.css");
+      },
     }),
 
     // If you have external dependencies installed from
@@ -43,35 +45,38 @@ export default {
 
     // Watch the `public` directory and refresh the
     // browser on changes when not in production
-    !production && livereload('public'),
+    !production && livereload("public"),
 
     // added by angelo
     // compile to good old IE11 compatible ES5
     babel({
-      extensions: [ '.js', '.mjs', '.html', '.svelte' ],
+      extensions: [".js", ".mjs", ".html", ".svelte"],
       runtimeHelpers: true,
-      exclude: [ 'node_modules/@babel/**', 'node_modules/core-js/**' ],
+      exclude: [
+        "node_modules/@babel/**",
+        "node_modules/core-js/**"
+      ],
       presets: [
         [
-          '@babel/preset-env',
+          "@babel/preset-env",
           {
             targets: {
-              ie: '11'
+              ie: "11",
             },
-            useBuiltIns: 'usage',
-            corejs: 3
-          }
-        ]
+            useBuiltIns: "usage",
+            corejs: 3,
+          },
+        ],
       ],
       plugins: [
-        '@babel/plugin-syntax-dynamic-import',
+        "@babel/plugin-syntax-dynamic-import",
         [
-          '@babel/plugin-transform-runtime',
+          "@babel/plugin-transform-runtime",
           {
-            useESModules: true
-          }
-        ]
-      ]
+            useESModules: true,
+          },
+        ],
+      ],
     }),
 
     // If we're building for production (npm run build
@@ -79,9 +84,9 @@ export default {
     production && terser(),
 
     // make into single .html file
-    inline('index.html', 'product.html', 'public')
+    inline("index.html", "product.html", "public"),
   ],
   watch: {
-    clearScreen: false
-  }
-}
+    clearScreen: false,
+  },
+};
