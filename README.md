@@ -2,18 +2,23 @@
 
 How to make a svelte app compatible with IE11.
 
+#### Updates from the original fork
+
+- Updated Rollup and dependencies to later major version.
+- Added stronger support for core-js polyfills, resolving potential gotchas for devs new to all this.
+
 Technologies used:
 
 - rollup
 - babel
 - core-js
+- SCSS via [Svelte Preprocess](https://github.com/kaisermann/svelte-preprocess#readme)
 
-To see how it's done, read [this blogpost](https://blog.az.sg/posts/making-a-svelte-app-compatible-with-internet-explorer-11) and check the final [rollup config](https://github.com/angelozehr/svelte-example-museums/blob/master/rollup.config.js).
-
-To se an alternate version using buble, [go back one commit](https://github.com/angelozehr/svelte-example-museums/blob/51677c6bd6d8ab24fab76097421db709883018d6/rollup.config.js).
-
+Check the final [rollup config](https://github.com/jayliu50/svelte-example-museums/blob/master/rollup.config.js) of this.
 
 #### Original project
+
+See also the [original fork](https://github.com/angelozehr/svelte-example-museums).
 
 This is a copy of the official [Svelte Template](https://github.com/sveltejs/template).
 

@@ -38,32 +38,32 @@ topflop_description	Die 5 Museen mit dem höchsten und tiefsten Frauenanteil in 
 bigmuseums_title	Meistbesuchte Museen schneiden schlecht ab	The most-visited museums perform poorly	Les musées les plus visités accordent peu de place aux femmes	I musei più visitati danno poco spazio alle donne	Los museos más visitados sacan malas notas	Os museus mais visitados na Suíça têm os piores resultados	訪問者数が最も多い美術館は不成績	参观者最多的美术馆女性艺术家个展比例较低	Самые посещаемые музеи показывают худшие результаты	المتاحف الأكثر زيارة تحتفظ بأدنى النتائج
 bigmuseums_description	Anteil an Einzelausstellungen in den grössten Schweizer Kunstmuseen	Percentage of solo exhibitions in the largest Swiss art museums	Part aux expositions individuelles dans les plus grands musées d'art suisses	Percentuale di mostre personali nei maggiori musei d'arte svizzeri	Proporción en exposiciones individuales en los principales museos de arte suizos 	Proporção de exposições individuais nos principais museus de arte da Suíça	スイスの大きな美術館が開いた単独展に占める割合（％）	瑞士最大美术馆的女性艺术家个展比例	Доля персональных выставок в крупнейших швейцарских художественных музеях	نسبة المعارض الفردية في أكبر المتاحف الثقافية في سويسرا
 source	Quelle: Eigene Recherche	Source: individual research	Source: propre recherche	Fonte: ricerca propria	Fuente: investigación propia	Fonte: pesquisa própria	出典：自社調査	来源：自行调研		المصدر: بحث ذاتي
-Château de Chillon					Castillo de Chillon		シヨン城			قصر شيّون 
-Kunstmuseum Bern					Museo de Arte de Berna		ベルン美術館			متحف الفن في برن 
-Fondation Beyeler					Fundación Beyeler		バイエラー財団			مؤسسة بايلير 
+Château de Chillon					Castillo de Chillon		シヨン城			قصر شيّون
+Kunstmuseum Bern					Museo de Arte de Berna		ベルン美術館			متحف الفن في برن
+Fondation Beyeler					Fundación Beyeler		バイエラー財団			مؤسسة بايلير
 Kunsthaus Zürich					Casa de Arte de Zúrich		チューリヒ美術館			دار الفن في زيورخ
-Kunstmuseum Basel					Museo de Arte de Basilea		バーゼル美術館			متحف الفن في بازل 
-Zentrum Paul Klee					Zentrum Paul Klee		パウルクレー・センター			مركز بول كلي 
+Kunstmuseum Basel					Museo de Arte de Basilea		バーゼル美術館			متحف الفن في بازل
+Zentrum Paul Klee					Zentrum Paul Klee		パウルクレー・センター			مركز بول كلي
 Musée d'art et d'histoire					Museo de Arte y de Historia		美術歴史博物館			متحف الفن والتاريخ
-Musée Alexis Forel					Museo Alexis Forel		アレクシ・フォレル博物館			متحف ألكسيس فوريل 
-Museum Nairs					Museo Nairs		スイス国立博物館			متحف نايرس 
-Kunsthalle Basel					Sala de Arte de Basilea		クンストハレ・バーゼル			رواق الفن في بازل 
-Centre d'art Pasquart					Centro de Arte Pasquart		パスクアートセンター			مركز الفن باسكوارت 
-Kunsthaus Grenchen					Casa de Arte de Grenchen		グレンヒェン美術館			دار الفن في غرينشين 
+Musée Alexis Forel					Museo Alexis Forel		アレクシ・フォレル博物館			متحف ألكسيس فوريل
+Museum Nairs					Museo Nairs		スイス国立博物館			متحف نايرس
+Kunsthalle Basel					Sala de Arte de Basilea		クンストハレ・バーゼル			رواق الفن في بازل
+Centre d'art Pasquart					Centro de Arte Pasquart		パスクアートセンター			مركز الفن باسكوارت
+Kunsthaus Grenchen					Casa de Arte de Grenchen		グレンヒェン美術館			دار الفن في غرينشين
 Musée d'art et d'histoire					Museo de Arte e Historia		美術・歴史博物館			متحف الفن والتاريخ
-Maison Tavel					Casa Tavel		タヴェル館			دار تافيل 
-Musée Rath					Museo Rath		ラース美術館			متحف "رات" 
-Museum Oskar Reinhart					Museo Oskar Reinhart		オスカー・ラインハルト美術館			متحف أوسكار راينهارت 
-Pinacoteca comunale					Pinacoteca comunal		市立美術館			معرض الصور البلدي 
-Basel					Basilea		バーゼル			بازل 
-Bern					Berna		ベルン			برن 
+Maison Tavel					Casa Tavel		タヴェル館			دار تافيل
+Musée Rath					Museo Rath		ラース美術館			متحف "رات"
+Museum Oskar Reinhart					Museo Oskar Reinhart		オスカー・ラインハルト美術館			متحف أوسكار راينهارت
+Pinacoteca comunale					Pinacoteca comunal		市立美術館			معرض الصور البلدي
+Basel					Basilea		バーゼル			بازل
+Bern					Berna		ベルン			برن
 Biel							ビール/ビエンヌ			بيل/بيان
-Genève					Ginebra		ジュネーブ			جنيف 
+Genève					Ginebra		ジュネーブ			جنيف
 Grenchen							グレンヒェン			غرينشين
 Locarno							ロカルノ			لوكارنو
-Morges							モルジュ			مُورج 
+Morges							モルジュ			مُورج
 Riehen							リーエン			ريهن
-Scuol							シュクオール			سكوول 
+Scuol							シュクオール			سكوول
 Veytaux/Montreux							ヴェトー/モントルー			فايتو/مونترو
 Winterthur							ヴィンタートゥール			فينترتور
 Zürich					Zúrich		チューリヒ			زيورخ`);
