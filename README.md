@@ -23,3 +23,9 @@ See also the [original fork](https://github.com/angelozehr/svelte-example-museum
 This is a copy of the official [Svelte Template](https://github.com/sveltejs/template).
 
 PS: As you might see, I did not find an elegant way to share styles across multiple svelte components. If you know a way, let me know :)
+
+### IE11 Support
+
+#### Dependency Decisions:
+
+- Using SCSS with PostCSS (autoprefixer) to author styles. Emotion did not work. Also, not sure if the eventual implementation by Svelte would work, since it seemed like the community was gravitating toward an implementation based on CSS Variables. TODO: see if using `postcss-preset-env` would help bring those modern CSS features.
