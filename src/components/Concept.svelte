@@ -1,6 +1,5 @@
 <script>
-export let params = {}
+  export let params = {}; // svelte-spa-router will injeect params here
 </script>
 
-<p>Concept Number {params.conceptId}</p>
-
+<h1>Concept ID: {params.conceptId}</h1>

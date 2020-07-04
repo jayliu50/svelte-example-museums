@@ -1,1 +1,1 @@
-<h1>Welcome to Voyager</h1>
+<h1>Welcome to Home</h1>

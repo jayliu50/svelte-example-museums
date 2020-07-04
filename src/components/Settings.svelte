@@ -1,1 +1,1 @@
-<p>Admin Settings</p>
+<h1>Admin Settings</h1>

@@ -1,5 +1,5 @@
 {
-  "name": "svelte-app-ie11",
+  "name": "svelte-app-ie11-starter",
   "author": "Jay Liu",
   "email": "jayliu50@gmail.com",
   "version": "0.0.1",
@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "core-js": "3",
-    "d3-dsv": "^1.1.1"
+    "svelte-spa-router": "^2.2.0"
   },
   "browserslist": "> .5%, IE 11",
   "main": "src/main.js"
